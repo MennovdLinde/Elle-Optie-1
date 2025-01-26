@@ -8,7 +8,6 @@ import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { motion, useAnimation, AnimatePresence } from "framer-motion";
 import { gsap } from "gsap";
-import { createPortal } from "react-dom";
 import CustomSlider from "./customSlider";
 import "./globals.css";
 
