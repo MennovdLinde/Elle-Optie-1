@@ -194,7 +194,7 @@ export default function Home() {
 
             <motion.div
               variants={isHomeRefreshed ? itemVariants : undefined}
-              className="bg-[var(--background-color-div)] p-4 rounded-2xl shadow-xl flex flex-col justify-evenly col-span-12 md:col-span-4 h-auto md:row-span-2 overflow-y-auto hide-scrollbar"
+              className="bg-[var(--background-color-div)] p-4 rounded-2xl shadow-xl flex flex-col justify-evenly col-span-12 md:col-span-4 h-[50vh] md:row-span-2 overflow-y-auto hide-scrollbar"
             >
               <div className="flex justify-end">
                 <motion.div
