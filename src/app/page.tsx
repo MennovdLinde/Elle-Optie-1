@@ -16,7 +16,6 @@ export default function Home() {
   const scrollRef = useRef(null);
   const controls = useAnimation();
   const [openDivIndex, setOpenDivIndex] = useState<number | null>(0);
-  const [animationDone, setAnimationDone] = useState(false);
   const [currentSection, setCurrentSection] = useState("home");
   const [isHomeRefreshed, setIsHomeRefreshed] = useState(true);
 
@@ -25,15 +24,6 @@ export default function Home() {
     setCurrentSection(sectionId);
     document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
   };
-
-  useEffect(() => {
-    if (!isHomeRefreshed) {
-      setAnimationDone(false);
-      controls.start("hidden");
-    } else {
-      controls.start("visible");
-    }
-  }, [isHomeRefreshed, controls]);
 
   useEffect(() => {
     const isSmallScreen = window.matchMedia("(max-width: 768px)").matches;
