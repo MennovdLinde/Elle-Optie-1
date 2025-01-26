@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { useEffect, useRef, useMemo, useState } from "react";
-import { FaLinkedin, FaInstagram, FaFacebook } from "react-icons/fa";
+import { FaLinkedin, FaInstagram } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { motion, useAnimation, AnimatePresence } from "framer-motion";
 import { gsap } from "gsap";
